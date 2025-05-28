@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Gerando Lideres</title>
+    <!-- aqui em baixo link que liga o html no css principal-->
+     <link rel="stylesheet" href="CSS ( estilo do site )/style(principal).css">
+</head>
+<header>
+        <div class="back1">
+            <h1 class="cabeçalhoP">Instituto Gerando Líderes</h1>
+            
+            <nav>
+                <ul>
+                    <li><a class="blocklink" href="index(página principal).html">Home</a></li>
+                    <li><a class="blocklink" href="sobre.html">Sobre</a></li>
+                    <li><a class="blocklink" href="blog.html">Blog</a></li>
+                    <li><a class="blocklink" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Bem-vindo ao Instituto Gerando Líderes</h2>
+            <p>Desenvolvemos líderes excepcionais através de metodologias inovadoras e programas de excelência. Nossa missão é formar pessoas capazes de transformar organizações e sociedades, criando um impacto positivo duradouro no mundo.</p>
+        </section>
+        
+        <section>
+            <h2>Nossa Missão</h2>
+            <p>Capacitar indivíduos com as habilidades, conhecimentos e mentalidade necessários para liderar com propósito, integridade e visão estratégica. Acreditamos que grandes líderes são formados através de experiências transformadoras e aprendizado contínuo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Instituto Gerando Líderes (IGL). Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Efeitos de brilho inspirados no logo
+        function createSparkles() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = Math.random() * 100 + '%';
+            sparkle.style.top = Math.random() * 100 + '%';
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 3000);
+        }
+
+        // Cria brilhos a cada 4 segundos
+        setInterval(createSparkles, 4000);
+
+        // Efeito extra nos links da navegação
+        document.querySelectorAll('.blocklink').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Animação suave no scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
