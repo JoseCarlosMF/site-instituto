@@ -3,7 +3,7 @@
         body {
             font-family: 'Arial', Helvetica, sans-serif;
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(139, 0, 0, 0.6));
-            background-image: url('./IMG/back1.jpeg');
+            background-image: url('../img/back1.jpeg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -39,7 +39,7 @@
         /* Header com a classe back1 */
         .back1 {
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(139, 0, 0, 0.4)), 
-                url('./IMG/perfil.jpeg');
+                url('../img/perfil.jpeg');
     background-size: cover; /* Faz a imagem preencher todo o espaço */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
